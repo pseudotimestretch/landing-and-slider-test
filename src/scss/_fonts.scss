@@ -1,0 +1,75 @@
+/* noto-sans-regular - latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('/src/fonts/noto-sans-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/src/fonts/noto-sans-v12-latin-regular.woff') format('woff');/* Modern Browsers */
+         
+  }
+  /* noto-sans-700 - latin */
+  @font-face {
+     font-display: swap;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('/src/fonts/noto-sans-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/src/fonts/noto-sans-v12-latin-700.woff') format('woff');/* Modern Browsers */
+
+  }
+
+ /* Montserrat Regular */
+  @font-face {
+     font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('/src/fonts/montserrat-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/src/fonts/montserrat-v15-latin-regular.woff') format('woff');/* Modern Browsers */
+
+  }
+
+/* Montserrat Medium */
+  @font-face {
+     font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+         url('/src/fonts/montserrat-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/src/fonts/montserrat-v15-latin-500.woff') format('woff');/* Modern Browsers */
+
+  }
+
+  /* Montserrat 700 */
+  @font-face {
+     font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('/src/fonts/montserrat-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/src/fonts/montserrat-v15-latin-700.woff') format('woff');/* Modern Browsers */
+
+  }
+
+  /* Montserrat 800 */
+  @font-face {
+     font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: 
+         url('/src/fonts/montserrat-v15-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/src/fonts/montserrat-v15-latin-800.woff') format('woff');/* Modern Browsers */
+
+  }
+
+
+  
+
+  

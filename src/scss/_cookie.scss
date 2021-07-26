@@ -1,0 +1,81 @@
+.cookie {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 9999999999;
+    bottom: 0vh;
+    left: 0;
+    right: 0;
+    @include breakpoint-down(medium) {
+        font-size: 12px;
+    }
+}
+
+.cookie__inner {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    background: #212834;
+    backdrop-filter: blur(64px);
+    padding: 20px 24px 20px 100px;
+    max-width: 100%;
+    margin: 0 auto;
+    @include breakpoint-down(medium) {
+        padding: 0 15px;
+        margin: 0;
+        height: 93px;
+    }
+}
+
+
+.pjAcceptCookieBarActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 6px;
+    &:hover {
+        border-color: black;
+        cursor: pointer;
+        color: black;
+    }
+    
+}
+
+
+
+.pjAcceptCookieBarBtn {
+    text-align: center;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+
+    color: #FFFFFF;
+    @include breakpoint-down(medium) {
+        max-width: 92px;
+        
+    }
+}
+
+
+.cookie__text {
+    @include breakpoint-down(medium) {
+        width: 200px;
+    }
+}
+
+.hide-cookie {
+    display: none;
+}

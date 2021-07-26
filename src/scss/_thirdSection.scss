@@ -1,0 +1,269 @@
+// Ordering
+
+.ordering {
+    margin-top: 192px;
+    position: relative;
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 auto;
+        background-image: url(/imgs/orderingBackground.png);
+        background-repeat: no-repeat;
+        @include breakpoint-down(medium) {
+            background-image: url(/imgs/phoneOrderingBackground.png);
+            gap: 130px;
+        }
+        
+    }
+
+    &__subtitle {
+        max-width: 421px;
+        margin: 0 0 0 59.7%;
+        @include breakpoint-down(medium) {
+            margin: 0 0 0 15px;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    &__img-wrapper {
+        position: relative;
+    }
+
+    &__img-inner {
+        position: relative;
+        max-width: 868px;
+        width: 100%;
+    }
+
+    &__img {
+        max-width: 868px;
+        width: 100%;
+        height: auto;
+        @include breakpoint-down(medium) {
+            max-width: 360px;
+        }
+    }
+
+    &__anim-img {
+        position: absolute;
+        z-index: 99999;
+    }
+
+    &__anim-img--first {
+        max-width: 266.78px;
+        width: 100%;
+        left: 475px;
+        top: 204px;
+        @include breakpoint-down(medium) {
+            left: 40px;
+            top: -65px;
+            max-width: 165px;
+            > img {
+                height: 57px;
+            }
+        }
+        @include breakpoint-up(large) {
+            animation: firstFrame 5s linear infinite reverse;
+        }
+    }
+
+    &__anim-img--second {
+        max-width: 285px;
+        width: 100%;
+        left: -25px;
+        top: 359px;
+        @include breakpoint-down(medium) {
+            left: 180px;
+            top: 19px;
+            max-width: 171px; 
+            > img {
+                height: 61px;
+            }
+        }
+        @include breakpoint-up(large) {
+            animation: secondFrame 5s linear infinite reverse;
+        }
+        
+    }
+
+    &__anim-img--third {
+        max-width: 185px;
+        width: 100%;
+        left: 695px;
+        
+        top: 639px;
+        @include breakpoint-up(large) {
+            animation: thirdFrame 5s linear infinite reverse;
+        }
+        @include breakpoint-down(medium) {
+             max-width: 122px;
+             left: 220px;
+             top: 424px;
+        }
+    }
+
+    &__anim-img--fourth {
+        max-width: 175.58px;
+        width: 100%;
+        left: 198px;
+        
+        top: 730px;
+        @include breakpoint-up(large) {
+            animation: fourthFrame 5s linear infinite reverse;
+        }
+
+        @include breakpoint-down(medium) {
+            left: 37px;
+            top: 341px;
+            max-width: 107px;
+        }
+
+        
+    }
+}
+
+
+.mural {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/imgs/NOTABNOTABBackground.png);
+        max-width: 1440px;
+        height: 1003px;
+    }
+}
+
+
+
+
+@keyframes firstFrame {
+    0% {
+        left: 475px;
+        top: 204px;
+    }
+    25% {
+        left: 455px;
+        top: 175px;
+        max-width: 290px;
+    }
+    50% {
+        left: 475px;
+        top: 145px;
+        max-width: 266.78px;
+    }
+
+    75% {
+        max-width: 290px;
+        top: 175px;
+        left: 495px;
+    }
+    100% {
+        left: 475px;
+        top: 204px;
+        max-width: 266.78px;
+    }
+}
+@keyframes secondFrame {
+    0% {
+        left: -25px;
+        top: 359px;
+        max-width: 285px;
+    }
+    25% {
+        left: -55px;
+        top: 329px;
+        max-width: 255px;
+    }
+    50% {
+        left: -25px;
+        top: 291px;
+        max-width: 285px;
+    }
+
+    75% {
+        max-width: 255px;
+        top: 329px;
+        left: 5px;
+    }
+    100% {
+        left: -25px;
+        top: 359px;
+        max-width: 285px;
+    }
+}
+
+
+@keyframes thirdFrame {
+    0% {
+        left: 695px;
+        top: 639px;
+        max-width: 185px;
+    }
+
+    25% {
+        left: 715px;
+        top: 610px;
+        max-width: 155px;
+    }
+
+    50% {
+        left: 695px;
+        top:  580px;
+        max-width: 185px;
+    }
+
+    75% {
+        left: 675px;
+        top: 610px;
+        max-width: 155px;
+    }
+
+    100% {
+        left: 695px;
+        top: 639px;
+        max-width: 185px;
+    }
+}
+
+
+@keyframes fourthFrame {
+    0% {
+        left: 198px;
+        top: 730px;
+        max-width: 175.58px;
+    }
+
+    25% {
+        left: 218px;
+        top: 700px;
+        max-width: 195.58px;
+    }
+
+    50% {
+        left: 198px;
+        top:  670px;
+        max-width: 175.58px;
+    }
+
+    75% {
+        left: 178px;
+        top: 700px;
+        max-width: 195.58px;
+    }
+
+    100% {
+        left: 198px;
+        top: 730px;
+        max-width: 175.58px;
+    }
+}
+
+
+

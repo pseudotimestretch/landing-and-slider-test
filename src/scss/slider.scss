@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Poiret One';
+  src: url(
+    /src/fonts/PoiretOne-Regular.ttf
+  );
+}
+
+$slider-width: 560px;
+$slider-height: 150px;
+
+body {
+    height: 100%;
+    background-color: 	#9966CC;
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-size: 40px;
+  }
+
+
+// carousel
+.slider {
+    position: absolute;
+    width: $slider-width;
+    height: $slider-height;
+    // box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    width: $slider-width;
+    height: $slider-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    &::selection {
+        background: transparent;
+    }
+}
+
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: $slider-width;
+    height: $slider-height;
+    z-index: 1;
+  }
+
+
+  .slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -$slider-width;
+    width: 10000px;
+  }
+
+  .control {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      z-index: 9999;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 50px;
+      top: 50%;
+      transform: translate(0, -50%);
+  }
+  .prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+    left: -37px;
+    
+}
+  
+  .next {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+    right: -37px;
+  }
+
+
+  .prev,
+.next {
+  background-size: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.pagination {
+  display: inline-block;
+}
+.circle {
+  // display: block;
+  // width: 20px;
+  // height: 20px;
+  // background-color: white;
+   font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border-radius: 50%;
+    
+    outline: none;
+    background-color: grey;
+}
+
+.slider-dots {
+  text-align: center;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  font-size: 100%;
+  margin: 0 10px;
+
+
+  &:hover {
+    background-color: #FF9933;
+  }
+}
+
+
+.active {
+  background-color: #FF9933;
+}
+
+
